@@ -68,6 +68,36 @@ img.header-photo {
     font-family: 'Titillium Web', sans-serif;
 }
 
+/* kontakt */
+
+.map {
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.map div{
+    display: block;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #BDBFC1;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Titillium Web', Abhaya Libre, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
 /* waskie telefony */
 @media only screen and (max-width: 300px){
     #menu{
@@ -190,11 +220,14 @@ display:block;
 }
 
 .text-con li{    
-    text-align: center;
-    margin-bottom: 2rem;
     list-style-type: none;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+ }
+
+ .text-con li{    
+    text-align: center;
+    margin-bottom: 2rem;
  }
 
  .text-con li div{    
@@ -205,29 +238,12 @@ display:block;
 
 /* galeria */
 /* kontakt */
-.map {
-    height: fit-content;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.map div{
-    display: block;
-}
 /* footer */
-.footer{
-    width: 100%;
-    height: 10rem;
-    background-color: #BDBFC1;
-    text-align: center;
+#pinezka{
+    transform: translateY(20px);
 }
-
-.footer a{
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Titillium Web', Abhaya Libre, Helvetica, sans-serif;
-    font-size: 2rem;
+#telefon{
+    transform: translateY(15px);
 }
 }
 
@@ -236,12 +252,6 @@ display:block;
 
 @media only screen and (min-width: 500px) and (max-width: 1199px){
 
-    body {
-        margin: 0;
-        font-family: Abhaya Libre, Helvetica, sans-serif;    
-        background-color: #EDE9ED;
-    }
-    
     /* top nawigacja */
     .top-nav {
         height: 80px;
@@ -254,7 +264,7 @@ display:block;
     }
     
     .top-nav h1.tytul {
-        font-family: Abhaya Libre, Helvetica, sans-serif;
+    font-family: Abhaya Libre, Helvetica, sans-serif;
     margin: 0px 40px;
     font-size: 4rem;
     font-weight: normal;
@@ -282,50 +292,34 @@ display:block;
     }
     /* te szare ze zdjeciem i napisami */
     .photo-container {
-        width: 100%;
-        background-color: #BDBFC1;
         height: 35rem;
-        z-index: -1;
     }
     
     img.header-photo {
         height: 35rem;
-        float: right;
     }
     
     .postcard {
-        white-space: nowrap;
-        font-family: Abril Fatface, cursive;
         font-size: 4rem;
         padding-top: 6rem;
-        padding-inline: 1rem;
-        text-align: center;
-    
+        padding-inline: 1rem; 
     }
     
     .postcard div {
-        text-align: center;
         font-size: 2.5rem;
-        font-family: 'Titillium Web', sans-serif;
     }
     
     /* o nas */
-    
-    .about-us {
-        
-        width: 100%;
-    }
-    
+       
     .photo-text-con{
         display: block;
-        padding: 2rem;
-        
+        padding: 2rem;  
+        width: 90%;
     }
     
     .text-box {
         width: 100%;
         text-align: left;
-        font-family: 'Titillium Web', Abhaya Libre, Helvetica, sans-serif;
         font-size: 1.5rem;
         text-align: center;
     }
@@ -335,10 +329,7 @@ display:block;
         justify-content: center;
     }
     .left-photo img {
-        width: auto;
         height: 25rem;  
-        overflow: hidden;
-        box-shadow: 0px 30px 60px -30px rgb(0 0 0);
     }
     
     /* cennik */
@@ -347,77 +338,118 @@ display:block;
     margin-top: 1rem;
     }
     .postcard.cennik{
-        padding-bottom: 50px;
         padding-top: 20px;
     }
     
     .text-box.left{
         margin-top: 0px;
     } 
-    .text-box.right{
-        margin-top: 0px;
-    } 
     
     .text-con{
     display:block;
-    padding: 0px, 100px;
-    text-align: center;
     }
     
     .text-h3{
-        text-align: center;
         font-size: 4.5rem;
-        font-family: 'Titillium Web', sans-serif;
     }
     
     .text-con li{    
-        text-align: center;
+        text-align: left;
         margin-bottom: 2rem;
         list-style-type: none;
-        padding-left: 2.5rem;
+        padding-left: 20%;
         padding-right: 2.5rem;
+        font-size: larger;
      }
     
      .text-con li div{    
         text-align: left;
         padding-left: 25%;
         font-weight: bolder;
+
      }
     
     /* galeria */
     /* kontakt */
-    .map {
-        height: fit-content;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-    .map div{
-        display: block;
-    }
     /* footer */
-    .footer{
-        width: 100%;
-        height: 10rem;
-        background-color: #BDBFC1;
-        text-align: center;
+    #pinezka{
+        transform: translateY(15px);
     }
-    
-    .footer a{
-        text-decoration: none;
-        color: #000000;
-        font-family: 'Titillium Web', Abhaya Libre, Helvetica, sans-serif;
-        font-size: 2rem;
+    #telefon{
+        transform: translateY(15px);
+    }
+}
+@media only screen and (min-width: 750px) and (max-width: 1199px){
+
+    div.logo{
+        margin-left: 10%;
     }
 
+    .photo-text-con{
+        display: block;
+        padding: 2rem;  
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1199px){
+
+    div.logo{
+        margin-left: 22%;
+    }
 }
 
+/* @media only screen and (min-width: 900px) and (max-width: 1199px){
 
+div.logo{
+    margin-left: 30%;
+}
+}
+@media only screen and (min-width: 600px) and (max-width: 900x){
 
+    div.logo{
+        margin-left: 100px;
+    }
+}
 
+@media only screen and (min-width: 400px) and (max-width: 500x){
 
-
+    .top-nav {
+ 
+        justify-content: left;
+        font-size: 5rem;
+    }
+    
+    .top-nav a{
+        display: none;
+    }
+    
+    .top-nav h1.tytul {
+        display: none;
+    }
+    
+    .logo{
+        width: 100%;
+        display: inline-block;
+    
+    }
+    
+    .logo img{
+        height: 6rem;
+        padding-left: 20px;
+        opacity: 1;
+    }
+    
+    .material-symbols-outlined {
+        font-size: 60px;
+        transform: translate(0px,-17px);
+    }
+    #menu{
+        margin-left: 25%;
+        border: none;
+        background-color: #EDE9E5;
+        opacity: 0.7;
+    }
+} */
 
 
 
@@ -530,42 +562,10 @@ display:flex;
 .text-h3{
     font-size: 7rem;
 }
-
-.text-con li{    
-    text-align: center;
-    margin-bottom: 2rem;
- }
-
- .text-con li div{    
-    text-align: left;
-    padding-left: 25%;
-    font-weight: bolder;
- }
-
 /* galeria */
 /* kontakt */
-.map {
-    height: fit-content;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.map div{
-    display: block;
-}
 /* footer */
-.footer{
-    width: 100%;
-    height: 10rem;
-    background-color: #BDBFC1;
-    text-align: center;
-}
 
-.footer a{
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Titillium Web', Abhaya Libre, Helvetica, sans-serif;
-    font-size: 2rem;
-}
+
+
 }
